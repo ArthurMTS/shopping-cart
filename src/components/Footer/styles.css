@@ -1,0 +1,56 @@
+#main-footer {
+  background-color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  /* remove later */
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+#main-footer p {
+  font-size: 18px;
+  color: #eee;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+#main-footer p a {
+  color: #eee;
+  transition: all .5s;
+}
+
+#main-footer p a:hover {
+  color: #178f3b;
+}
+
+#main-footer p a:hover::before {
+  content: '<';
+}
+
+#main-footer p a:hover::after {
+  content: '/>';
+  margin-left: 5px;
+}
+
+#main-footer a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+#main-footer a img {
+  transition: all .2s;
+}
+
+#main-footer a img:hover {
+  filter: brightness(.8);
+}
