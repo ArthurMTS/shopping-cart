@@ -1,0 +1,54 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 30vw;
+  gap: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 5px 5px 10px #222;
+}
+
+.product img {
+  width: 100px;
+  border-bottom: 1px solid #222;
+  padding-bottom: 10px;
+}
+
+.product strong {
+  font-size: 18px;
+}
+
+.product button {
+  padding: 10px;
+  font-size: 18px;
+  background-color: #178f3b;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  transition: all .2s;
+}
+
+.product button:hover {
+  transform: scale(1.1);
+}
+
+@media (min-width: 800px) {
+  .product {
+    width: 20vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .product {
+    width: 40vw;
+  }
+}
+
+@media (min-width: 1000px) {
+  .product {
+    width: 15vw;
+  }
+}

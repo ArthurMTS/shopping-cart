@@ -1,0 +1,8 @@
+#product-list {
+  width: 80vw;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
