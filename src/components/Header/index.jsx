@@ -15,6 +15,7 @@ export function Header() {
         <ul>
           <li className='nav-link'><Link to='/'>Home</Link></li>
           <li className='nav-link'><Link to='/products'>Products</Link></li>
+          <li className='nav-link'><Link to='/contact'>Contact</Link></li>
           <li id='cart' className='nav-link'><Link to='/cart'><img src={shoppingCart} alt='cart icon'/>0</Link></li>
         </ul>
       </nav>

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Home } from './pages/Home';
 import { Products } from './pages/Products';
 import { ProductInfo } from './pages/ProductInfo';
+import { Contact } from './pages/Contact';
 import { Cart } from './pages/Cart';
 
 export function Routes() {
@@ -12,6 +13,7 @@ export function Routes() {
         <Route exact path='/' component={Home} />
         <Route exact path='/products' component={Products} />
         <Route exact path='/products/:id' component={ProductInfo} />
+        <Route exact path='/contact' component={Contact} />
         <Route exact path='/cart' component={Cart} />
       </Switch>
     </Router>
