@@ -46,10 +46,10 @@
   background-color: #178f3b;
 }
 
-#cart a {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+#main-header #cart a {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
 }
 
 @media (max-width: 720px) {

@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   width: 80vw;
+  min-height: 75vh;
   margin: 20px auto;
   gap: 10px;
 }
@@ -61,5 +62,11 @@
 @media (min-width: 1350px) {
   #product-info {
     width: 50vw;
+  }
+}
+
+@media (max-width: 720px) {
+  #product-info {
+    min-height: 66vh;
   }
 }

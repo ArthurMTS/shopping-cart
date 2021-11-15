@@ -1,11 +1,12 @@
-#cart {
+#cart-page {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  min-height: 81.5vh;
 }
 
-#cart h2 {
+#cart-page h2 {
   margin-top: 20px;
 }
 
@@ -127,5 +128,11 @@
 @media(min-width: 1200px) {
   #list li {
     width: 60vw;
+  }
+}
+
+@media (max-width: 720px) {
+  #cart-page {
+    min-height: 72.5vh;
   }
 }

@@ -7,6 +7,8 @@ import { Loading } from '../../components/Loading';
 
 import { api } from '../../services/api';
 
+import arrowIcon from '../../assets/chevrons-up.svg';
+
 import './styles.css';
 
 export function Products() {
@@ -33,6 +35,9 @@ export function Products() {
             )) :
             <Loading />
         }
+        <a href='#main-header' id='go-up'>
+          <img src={arrowIcon} alt='Chevrons up' />
+        </a>
       </main>
       <Footer />
     </>

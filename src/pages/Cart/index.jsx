@@ -16,7 +16,7 @@ export function Cart() {
   return (
     <>
       <Header />
-      <main id='cart'>
+      <main id='cart-page'>
         <h2>Take a look at your cart!</h2>
         <ul id='list'>
           {
