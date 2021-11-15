@@ -1,9 +1,13 @@
 import { Routes } from './Routes';
 
+import { CartProvider } from './contexts/cart';
+
 import './global.css';
 
 export function App() {
   return (
-    <Routes />
+    <CartProvider>
+      <Routes />
+    </CartProvider>
   );
 }

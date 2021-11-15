@@ -1,0 +1,131 @@
+#cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#cart h2 {
+  margin-top: 20px;
+}
+
+#list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+#list li {
+  width: 80vw;
+  list-style-type: none;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+  border-bottom: 2px solid #222;
+}
+
+#list li div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+#list li:first-child {
+  border-top: 2px solid #222;
+}
+
+#list a {
+  text-decoration: none;
+  color: #222;
+  transition: all .2s;
+  width: 40vw;
+}
+
+#list a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+#list input {
+  width: 90px;
+  padding: 5px;
+}
+
+#list input::-webkit-inner-spin-button { 
+  all: unset; 
+  min-width: 21px;
+  min-height: 45px;
+  margin: 17px;
+  padding: 0px;
+  background-image: 
+  linear-gradient(to top, transparent 0px, transparent 16px, #fff 16px, #fff 26px, transparent 26px, transparent 35px, #000 35px,#000 36px,transparent 36px, transparent 40px),
+  linear-gradient(to right, transparent 0px, transparent 10px, #000 10px, #000 11px, transparent 11px, transparent 21px);
+  transform: rotate(90deg) scale(0.8, 0.9);
+  cursor:pointer;
+}
+
+#list button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+#list button:hover {
+  animation: shake .2s infinite alternate;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+
+#total {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#total p { 
+  font-size: 22px;
+}
+
+#total button {
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  transition: all .2s;
+  margin-bottom: 20px;
+}
+
+#total button:hover {
+  background-color: #178f3b;
+}
+
+@media(min-width: 950px) {
+  #list li {
+    width: 70vw;
+  }
+}
+
+@media(min-width: 1200px) {
+  #list li {
+    width: 60vw;
+  }
+}
