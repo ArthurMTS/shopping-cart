@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 import { Header } from '../../components/Header';
@@ -9,7 +10,7 @@ import './styles.css';
 
 export function Home() {
   return (
-    <>
+    <div>
       <Header />
       <main id='home'>
         <div id='info'>
@@ -20,6 +21,6 @@ export function Home() {
         <aside><img src={img} alt='Man making a face' /></aside>
       </main>
       <Footer />
-    </>
+    </div>
   );
 }

@@ -1,3 +1,5 @@
+import React from 'react';
+
 import loaderIcon from '../../assets/loader.svg';
 
 import './styles.css';

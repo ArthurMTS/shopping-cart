@@ -1,4 +1,4 @@
-import { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 
 import { Header } from '../../components/Header';
 import { Footer } from '../../components/Footer';
@@ -27,23 +27,23 @@ export function ProductInfo({ match }) {
   }, [match]);
 
   return (
-    <>
+    <div>
       <Header />
       <main id='product-info'>
         {
           product.hasOwnProperty('id') ? 
-            <>
+            <div>
               <img id='product-image' src={product.image} alt={product.title} />
               <p id='title'>{product.title}</p>
               <span id='category'>{product.category} - Rate: {product.rating ? product.rating.rate : ''}</span>
               <p id='description'>{product.description}</p>
               <strong>U$ {product.price}</strong>
               <button onClick={() => addProduct(product)}>Add to Cart</button>
-            </> :
+            </div> :
             <Loading />
         }
       </main>
       <Footer />
-    </>
+    </div>
   );
 }

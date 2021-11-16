@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import { Header } from '../../components/Header';
 import { Footer } from '../../components/Footer';
@@ -25,7 +25,7 @@ export function Products() {
   }, []);
 
   return (
-    <>
+    <div>
       <Header />
       <main id='product-list'>
         {
@@ -40,6 +40,6 @@ export function Products() {
         </a>
       </main>
       <Footer />
-    </>
+    </div>
   );
 }

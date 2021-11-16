@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 
 import { Header } from '../../components/Header';
@@ -14,7 +14,7 @@ export function Cart() {
   const { cart, removeProduct, changeQuantity } = useContext(CartContext);
 
   return (
-    <>
+    <div>
       <Header />
       <main id='cart-page'>
         <h2>Take a look at your cart!</h2>
@@ -41,6 +41,6 @@ export function Cart() {
         </div>
       </main>
       <Footer />
-    </>
+    </div>
   );
 }
